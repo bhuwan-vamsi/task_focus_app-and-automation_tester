@@ -1,0 +1,75 @@
+/* Full-page layout with fixed Navbar */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent overall page scrolling */
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  height: calc(100vh - 60px); /* Subtract Navbar height */
+  overflow: hidden; /* Prevent the entire page from scrolling */
+}
+
+/* Navbar at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust as per your Navbar height */
+  background-color: #f8f9fa; /* Light grey background */
+  z-index: 1000; /* Ensure it stays on top of everything */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #dee2e6; /* Optional: subtle border */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+/* LeftMenu styles */
+.left-menu {
+  width: 260px; /* Fixed width for LeftMenu */
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem;
+  max-height: 100%; /* Ensure it doesn't exceed the parent container height */
+  scroll-behavior: smooth;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Occupy remaining space next to LeftMenu */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem;
+  height: 100%; /* Stretch to full height */
+  background-color: #ffffff; /* Optional: white background */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  scroll-behavior: smooth;
+}
+
+/* TaskList container inside main content */
+.task-list-container {
+  flex: 1; /* Allow TaskList to take remaining space */
+  max-height: 100%; /* Prevent it from exceeding its parent height */
+  overflow-y: auto; /* Enable vertical scrolling within TaskList */
+}
+
+/* Hide scrollbars for LeftMenu and Main Content */
+.left-menu::-webkit-scrollbar,
+.main-content::-webkit-scrollbar,
+.task-list-container::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar width */
+}
+
+.left-menu,
+.main-content,
+.task-list-container {
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+  scrollbar-width: none; /* Firefox */
+}

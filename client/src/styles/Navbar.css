@@ -1,0 +1,9 @@
+.custom-navbar {
+  height: 70px;
+  align-content: center;
+}
+  
+.navbar-brand img {
+  height: 60px;
+  width: 60px;
+}
