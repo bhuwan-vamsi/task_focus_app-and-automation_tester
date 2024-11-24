@@ -1,65 +1,80 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { UserContext } from "../context/userContext";
-import LeftMenu from "../components/LeftMenu";
 import TaskList from "../components/TaskList";
-import tasksData from "../fakeTasks";
+import { getTasks } from "../services/taskServices";
+import { useNavigate } from "react-router-dom"; // To redirect unauthenticated users
 
 export default function Dashboard() {
-  const { user } = useContext(UserContext);
+  const { user, loading } = useContext(UserContext); // Access user and loading state from context
+  const navigate = useNavigate(); // To navigate if user is not logged in
 
-  const [categories, setCategories] = useState([
-    "All",
-    "Work",
-    "Personal",
-    "Leisure",
-    "Health",
-    "Hobby",
-  ]);
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [tasks, setTasks] = useState(tasksData);
+  const [tasks, setTasks] = useState([]);
+  const [taskLoading, setTaskLoading] = useState(true); // Separate loading for tasks
+  const [error, setError] = useState("");
 
-  const handleCategorySelect = (category) => {
-    setSelectedCategory(category);
-  };
+  useEffect(() => {
+    if (!loading && !user) {
+      navigate("/login");
+    }
+  }, [loading, user, navigate]);  
 
-  const handleAddCategory = (newCategory) => {
-    setCategories([...categories, newCategory]);
-  };
+  useEffect(() => {
+    if (user) {
+      const loadData = async () => {
+        try {
+          setTaskLoading(true);
 
-  const filteredTasks = tasks.filter(
-    (task) =>
-      selectedCategory === "All" || task.category === selectedCategory
-  );
+          // Fetch tasks
+          const taskData = await getTasks();
+          setTasks(taskData);
+
+          setTaskLoading(false);
+        } catch (err) {
+          console.error("Error loading data:", err);
+          setError("Failed to load tasks or categories.");
+          setTaskLoading(false);
+        }
+      };
+
+      loadData();
+    }
+  }, [user]);
 
   const currentHour = new Date().getHours();
   const greeting =
-    currentHour < 12
+    currentHour < 4
+      ? "Hello! Midnight Tasker"
+      : currentHour < 12
       ? "Good Morning"
       : currentHour < 18
       ? "Good Afternoon"
       : "Good Evening";
 
-  return (
-    <>
-      {/* Dashboard Layout */}
-      <div className="dashboard-container">
-        {/* Left Menu */}
-        <div className="left-menu">
-          <LeftMenu
-            categories={categories}
-            onCategorySelect={handleCategorySelect}
-            onAddCategory={handleAddCategory}
-          />
-        </div>
+  if (loading) {
+    return <p>Loading...</p>; // Wait until UserContext finishes loading
+  }
 
-        {/* Main Content */}
-        <div className="main-content">
-          <h2>
-            {greeting}, {user?.name || "Guest"}!
-          </h2>
-          <TaskList tasks={filteredTasks} setTasks={setTasks} />
-        </div>
-      </div>
-    </>
+  if (!user) {
+    return <p>Please Login to continue.</p>; // Show message if user is not logged in
+  }
+
+  return (
+    <div className="dashboard-container">
+      {taskLoading ? (
+        <p>Loading tasks...</p>
+      ) : error ? (
+        <p className="text-danger">{error || "No tasks found"}</p>
+      ) : (
+        <>
+          {/* Main Content */}
+          <div className="main-content">
+            <h2>
+              {greeting}, {user?.name}!
+            </h2>
+            <TaskList tasks={tasks} setTasks={setTasks} />
+          </div>
+        </>
+      )}
+    </div>
   );
 }

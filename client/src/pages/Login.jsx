@@ -1,50 +1,45 @@
-import React, { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../styles/login.css';
-import { UserContext } from '../context/userContext';
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import "../styles/login.css";
+import { UserContext } from "../context/userContext";
+import { loginUser } from "../services/userServices"; // Import loginUser service
 
 export default function Login() {
-
   const { setUser } = useContext(UserContext);
   const navigate = useNavigate();
-  
+
   const [data, setData] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
 
-  const loginUser = async (e) => {
+  const [error, setError] = useState(""); // Track login errors
+
+  const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8000/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include',
-        body: JSON.stringify(data)
-      });
+      const res = await loginUser(data.email, data.password); // Use loginUser from userServices
 
-      const res = await response.json();
-
-      // Check the HTTP status to determine success
-      if (!response.ok) {
-        console.error('Failed to login');
+      if (res.error) {
+        // Handle login errors (based on API response structure)
+        setError(res.error);
+        console.error("Login failed:", res.error);
       } else {
-        setData({});  // Clear the form data
-        setUser(res.user);  // Store user in context
-        navigate('/');  // Redirect to home page
+        setData({}); // Clear the form data
+        setUser(res.user); // Store user in context
+        navigate("/"); // Redirect to home page
       }
-    } catch (error) {
-        console.error(error);
+    } catch (err) {
+      console.error("Error during login:", err);
+      setError("An unexpected error occurred. Please try again.");
     }
   };
 
   return (
     <div className="login">
       <div className="login-container">
-        <form className="login-form" onSubmit={loginUser}>
+        <form className="login-form" onSubmit={handleLogin}>
           <label>Email</label>
           <input
             type="email"
@@ -61,6 +56,7 @@ export default function Login() {
           />
           <button type="submit">Login</button>
         </form>
+        {error && <p className="text-danger mt-2">{error}</p>} {/* Display login errors */}
       </div>
     </div>
   );

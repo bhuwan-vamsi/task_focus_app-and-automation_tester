@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../context/userContext.jsx';
 import { Link, useNavigate } from 'react-router-dom';
+import { logoutUser } from "../services/userServices";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/Navbar.css';
@@ -12,28 +13,16 @@ export default function Navbar() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    if (user) {
-      setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(false);
-    }
+    setIsAuthenticated(!!user);
   }, [user]);
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:8000/logout', {
-        method: 'POST',
-        credentials: 'include',
-      });
-
-      if (response.ok) {
+        await logoutUser(); // Call API to log out
         setUser(null);
-        navigate('/login');
-      } else {
-        console.error('Logout failed');
-      }
-    } catch (error) {
-      console.error('Logout error:', error);
+        navigate("/login");
+    } catch (err) {
+        console.error("Logout failed. Please try again.");
     }
   };
 

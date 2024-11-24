@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { verifyProfile } from "../services/userServices"; // Import verifyProfile function
 
 export const UserContext = createContext({});
 
@@ -12,30 +13,19 @@ export function UserContextProvider({ children }) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const fetchUserProfile = async () => {
-            try {
-              const response = await fetch('http://localhost:8000/verify-profile', {
-                method: 'GET',
-                headers: { 'Content-Type': 'application/json' },
-                credentials: 'include',  // Ensure cookies are included
-              });
-          
-              if (response.ok) {
-                const data = await response.json();
-                setUser(data);  // Update user state
-              } else {
-                setUser(null);  // Clear user if profile fetch fails
-                console.log('Profile fetch failed: ', await response.json());
-              }
-            } catch (error) {
-              setUser(null);
-              console.error('Error fetching profile:', error);
-            } finally {
-              setLoading(false);  // Stop loading after fetch completes
-            }
-        };
-        
-        fetchUserProfile();
+      const fetchUserProfile = async () => {
+        try {
+          const data = await verifyProfile(); // Use verifyProfile from userServices.js
+          setUser(data); // Update user state
+        } catch (error) {
+          setUser(null); // Clear user state if verification fails
+          console.error("Profile fetch failed:", error.message);
+        } finally {
+          setLoading(false); // Stop loading after fetch completes
+        }
+      };
+  
+      fetchUserProfile();
     }, []);
 
     // Redirect to /login if the user is not logged in and tries to access other routes
