@@ -1,0 +1,475 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test_add_task,"Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_delete_task,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//h5[text()='Task 1']/ancestor::div[@class='card']""}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_mark_task_completed,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//h5[text()='Task 1']/ancestor::div[@class='card']""}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_update_task,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//h5[text()='Task 1']/ancestor::div[@class='card']""}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_user_login,"Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_user_registration,"Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_add_task,"Message: no such alert
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C55B9]
+	(No symbol) [0x00007FF64D5EAF08]
+	(No symbol) [0x00007FF64D63F3AD]
+	(No symbol) [0x00007FF64D5EAA75]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_delete_task,"Message: no such alert
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C55B9]
+	(No symbol) [0x00007FF64D5EAF08]
+	(No symbol) [0x00007FF64D63F3AD]
+	(No symbol) [0x00007FF64D5EAA75]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_mark_task_completed,"Message: no such alert
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C55B9]
+	(No symbol) [0x00007FF64D5EAF08]
+	(No symbol) [0x00007FF64D63F3AD]
+	(No symbol) [0x00007FF64D5EAA75]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_update_task,"Message: no such alert
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C55B9]
+	(No symbol) [0x00007FF64D5EAF08]
+	(No symbol) [0x00007FF64D63F3AD]
+	(No symbol) [0x00007FF64D5EAA75]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_user_login,"Message: no such alert
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C55B9]
+	(No symbol) [0x00007FF64D5EAF08]
+	(No symbol) [0x00007FF64D63F3AD]
+	(No symbol) [0x00007FF64D5EAA75]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_user_registration,"Message: no such alert
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C55B9]
+	(No symbol) [0x00007FF64D5EAF08]
+	(No symbol) [0x00007FF64D63F3AD]
+	(No symbol) [0x00007FF64D5EAA75]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_add_task,"Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_delete_task,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//h5[text()='Task 1']/ancestor::div[@class='card']""}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_mark_task_completed,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//h5[text()='Task 1']/ancestor::div[@class='card']""}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_update_task,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//h5[text()='Task 1']/ancestor::div[@class='card']""}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_user_login,"Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"
+test_user_registration,"Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF64D7B6CB5+28821]
+	(No symbol) [0x00007FF64D723840]
+	(No symbol) [0x00007FF64D5C578A]
+	(No symbol) [0x00007FF64D6191BE]
+	(No symbol) [0x00007FF64D6194AC]
+	(No symbol) [0x00007FF64D662647]
+	(No symbol) [0x00007FF64D63F33F]
+	(No symbol) [0x00007FF64D65F412]
+	(No symbol) [0x00007FF64D63F0A3]
+	(No symbol) [0x00007FF64D60A778]
+	(No symbol) [0x00007FF64D60B8E1]
+	GetHandleVerifier [0x00007FF64DAEFCAD+3408013]
+	GetHandleVerifier [0x00007FF64DB0741F+3504127]
+	GetHandleVerifier [0x00007FF64DAFB5FD+3455453]
+	GetHandleVerifier [0x00007FF64D87BDBB+835995]
+	(No symbol) [0x00007FF64D72EB5F]
+	(No symbol) [0x00007FF64D72A814]
+	(No symbol) [0x00007FF64D72A9AD]
+	(No symbol) [0x00007FF64D71A199]
+	BaseThreadInitThunk [0x00007FFB3585259D+29]
+	RtlUserThreadStart [0x00007FFB3792AF38+40]
+"

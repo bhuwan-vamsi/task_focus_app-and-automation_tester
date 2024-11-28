@@ -1,0 +1,21 @@
+test_type,name,email,password,title,description,priority,dueDate,completed
+# User Registration
+create_user,John Doe,john@example.com,secure123,,,,,
+create_user,Jane Smith,jane@example.com,secure123,,,,,
+
+# User Login
+login,John Doe,john@example.com,secure123,,,,,
+login,Jane Smith,jane@example.com,secure123,,,,,
+
+# Task Addition
+create_task,,,,"Task 1","Description for Task 1","high","2024-12-31",False
+create_task,,,,"Task 2","Description for Task 2","medium","2024-11-30",True
+
+# Task Update
+update_task,,,,"Task 1","Updated description for Task 1","low","2024-12-25",False
+
+# Mark Task Completed
+complete_task,,,,"Task 1",,,,True
+
+# Task Deletion
+delete_task,,,,"Task 2",,,,False

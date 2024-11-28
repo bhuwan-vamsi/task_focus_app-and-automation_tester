@@ -64,7 +64,7 @@ export default function TaskList({ tasks, setTasks }) {
             alignItems: "center",
           }}
         >
-          <i className="bi bi-plus" style={{ fontSize: "24px" }}></i>
+          <i className="bi bi-plus" name="addTask" style={{ fontSize: "24px" }}></i>
         </Link>
       </div>
     </>

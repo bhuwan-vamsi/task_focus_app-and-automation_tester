@@ -1,0 +1,7 @@
+test_type,name,email,password,title,description,priority,dueDate,completed
+register,John Doe,john@example.com,secure123,,,,,
+login,John Doe,john@example.com,secure123,,,,,
+create_task,,,,"Task 1","This is Task 1","high","2024-12-31",False
+update_task,,,,"Task 1","Updated Task 1","medium",,False
+complete_task,,,,"Task 1",,,,True
+delete_task,,,,"Task 1",,,,False

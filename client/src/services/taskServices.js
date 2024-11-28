@@ -57,13 +57,13 @@ export const updateTask = async (taskId, taskData) => {
 
 export const deleteTask = async (taskId) => {
   try {
-    const response = await fetch(`${API_BASE_URL}`, {
+    const response = await fetch(`${API_BASE_URL}/tasks`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
-      credentials: "include",
-      body: JSON.stringify({ id: taskId }), // Send ID in the body
+      credentials: "include", // Pass cookies
+      body: JSON.stringify({ id: taskId }), // Send task ID in body
     });
 
     if (!response.ok) {
@@ -74,7 +74,7 @@ export const deleteTask = async (taskId) => {
 
     return await response.json();
   } catch (error) {
-    console.error("Error deleting task:", error);
+    console.error("Error deleting task:", error.message);
     throw error;
   }
 };

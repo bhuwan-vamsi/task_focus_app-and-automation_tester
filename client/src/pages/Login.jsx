@@ -43,6 +43,7 @@ export default function Login() {
           <label>Email</label>
           <input
             type="email"
+            name="email"
             placeholder="Enter your email"
             value={data.email}
             onChange={(e) => setData({ ...data, email: e.target.value })}
@@ -50,11 +51,12 @@ export default function Login() {
           <label>Password</label>
           <input
             type="password"
+            name="password"
             placeholder="Enter your password"
             value={data.password}
             onChange={(e) => setData({ ...data, password: e.target.value })}
           />
-          <button type="submit">Login</button>
+          <button type="submit" name="login">Login</button>
         </form>
         {error && <p className="text-danger mt-2">{error}</p>} {/* Display login errors */}
       </div>

@@ -26,7 +26,7 @@ const addTask = async (req, res) => {
       dueDate,
     });
 
-    res.status(201).json(task);
+    res.status(201).json({_id: task._id, task});
   } catch (error) {
     console.error("Error adding task:", error.message);
     res.status(500).json({ error: "Failed to add task" });
@@ -66,13 +66,16 @@ const deleteTask = async (req, res) => {
       return res.status(400).json({ error: "Task ID is required" });
     }
 
-    const task = await Task.findOneAndDelete({ _id: id, user: req.userId });
+    const task = await Task.findOneAndDelete({
+      _id: id, // Ensure ObjectId
+      user: req.userId,
+    });
 
     if (!task) {
       return res.status(404).json({ error: "Task not found or unauthorized" });
     }
 
-    res.json({ message: "Task deleted successfully" });
+    res.status(200).json({ message: "Task deleted successfully", taskId: id });
   } catch (error) {
     console.error("Error deleting task:", error.message);
     res.status(500).json({ error: "Failed to delete task" });

@@ -47,7 +47,7 @@ export default function Navbar() {
             <>
               {isAuthenticated && (
                 <div>
-                  <button onClick={handleLogout} className="btn btn-outline-primary me-2">Log Out</button>
+                  <button onClick={handleLogout} className="btn btn-outline-primary me-2" name="logout">Log Out</button>
                 </div>
               )}
             </>

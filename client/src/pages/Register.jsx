@@ -50,6 +50,7 @@ export default function Register() {
           <input
             type="text"
             placeholder="Enter your name"
+            name="name"
             value={data.name}
             onChange={(e) => setData({ ...data, name: e.target.value })}
             required
@@ -57,6 +58,7 @@ export default function Register() {
           <label>Email</label>
           <input
             type="email"
+            name="email"
             placeholder="Enter your email"
             value={data.email}
             onChange={(e) => setData({ ...data, email: e.target.value })}
@@ -65,12 +67,13 @@ export default function Register() {
           <label>Password</label>
           <input
             type="password"
+            name="password"
             placeholder="Enter your password"
             value={data.password}
             onChange={(e) => setData({ ...data, password: e.target.value })}
             required
           />
-          <button type="submit">Register</button>
+          <button type="submit" name="register">Register</button>
         </form>
         {error && <p className="text-danger mt-2">{error}</p>} {/* Display errors */}
         {successMessage && <p className="text-success mt-2">{successMessage}</p>} {/* Display success message */}

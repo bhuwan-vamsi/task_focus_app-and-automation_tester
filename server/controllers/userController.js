@@ -13,7 +13,7 @@ const registerUser = async (req, res) => {
 
     const hashedPassword = await hashPassword(password);
     const user = await User.create({ name, email, password: hashedPassword });
-    res.json(user);
+    res.status(201).json(user);
   } catch (error) {
     res.status(500).json({ error: "Registration failed" });
   }

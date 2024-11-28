@@ -52,6 +52,7 @@ export default function TaskForm({ tasks, setTasks }) {
           <label className="form-label">Title</label>
           <input
             type="text"
+            name="title"
             className="form-control"
             value={formData.title}
             onChange={(e) => setFormData({ ...formData, title: e.target.value })}
@@ -61,6 +62,7 @@ export default function TaskForm({ tasks, setTasks }) {
         <div className="mb-3">
           <label className="form-label">Description</label>
           <textarea
+            name="description"
             className="form-control"
             value={formData.description}
             onChange={(e) =>
@@ -71,6 +73,7 @@ export default function TaskForm({ tasks, setTasks }) {
         <div className="mb-3">
           <label className="form-label">Priority</label>
           <select
+            name="priority"
             className="form-select"
             value={formData.priority}
             onChange={(e) =>
@@ -85,6 +88,7 @@ export default function TaskForm({ tasks, setTasks }) {
         <div className="mb-3">
           <label className="form-label">Due Date</label>
           <input
+            name="dueDate"
             type="date"
             className="form-control"
             value={formData.dueDate}
@@ -95,7 +99,7 @@ export default function TaskForm({ tasks, setTasks }) {
           />
           {error && <p className="text-danger mt-1">{error}</p>}
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button name="submit" type="submit" className="btn btn-primary">
           {id ? "Update Task" : "Add Task"}
         </button>
       </form>

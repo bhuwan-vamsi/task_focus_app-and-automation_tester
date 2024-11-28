@@ -48,6 +48,7 @@ export default function TaskItem({ task, onToggleComplete, onDelete }) {
             className="btn btn-outline-white me-2"
             onClick={() => onToggleComplete(task.id)}
             disabled={isOverdue}
+            name="complete"
           >
             <i
               className="bi bi-check-circle-fill"
@@ -57,6 +58,7 @@ export default function TaskItem({ task, onToggleComplete, onDelete }) {
           <Link
             to={`/tasks/edit/${task._id}`} // Ensure this dynamically uses the task's id
             state={{ task }}
+            name="editTask"
             className="btn btn-outline-primary me-2"
             style={{
               pointerEvents: isOverdue ? "none" : "auto",
@@ -69,6 +71,7 @@ export default function TaskItem({ task, onToggleComplete, onDelete }) {
             className="btn btn-outline-danger"
             onClick={() => onDelete(task._id)}
             disabled={isOverdue}
+            name="deleteTask"
           >
             <i
               className="bi bi-trash-fill"
