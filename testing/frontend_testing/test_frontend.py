@@ -18,13 +18,13 @@ class TestTaskManagement(unittest.TestCase):
         # Setup Chrome options for headless browsing
         chrome_options = Options()
         chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--window-size=1920x1080")
+        chrome_options.add_argument("--window-size=600x600")
 
         # Initialize the WebDriver
         service = Service(ChromeDriverManager().install())  # Use Service class
         cls.driver = webdriver.Chrome(service=service, options=chrome_options)  # Pass the service to the driver
         cls.driver.get("http://localhost:3000")
-        time.sleep(5)  # Wait for the page to load
+        time.sleep(15)  # Wait for the page to load
 
         # Initialize MongoDB connection
         cls.client = MongoClient("mongodb://localhost:27017/")
