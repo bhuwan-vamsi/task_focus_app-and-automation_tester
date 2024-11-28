@@ -62,4 +62,4 @@ Testing is performed using **Selenium WebDriver**, a popular tool for automating
 
 ### **Demo Video of Testing using Selenium**
 
-You can download or view the demo video [here](/records/demo_video.mp4).
+You can download or view the demo video [here](/records/short_demo_video.mp4).
